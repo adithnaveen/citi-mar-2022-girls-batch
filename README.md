@@ -154,8 +154,61 @@
     ); 
 ```
 
+```
+    class Employee {
+        // methods 
+        public void hi(){}
+    }
+
+    interface IEmployee {
+        public void hi();
+    }
+```
+
 
 ## JDBC
+- classes are concrete until you say it is abstract 
+- interfaces are 100% abstract 
+
+1. overriding 
+    - differnt classes, same method name have parent child relation 
+
+
+```
+    class Bank {
+        public void deposite() {
+            System.out.println(" you called deposite"); 
+        }
+    }
+
+    class CitiBank extends Bank {
+        @Override
+        public void depositeddd() {
+            System.out.println(" you called citi bank deposite"); 
+        }
+        public inertnationalTransfer() {
+            System.out.println("you can do internatinal transfer"); 
+        }
+    }
+
+    class SBI extends Bank {
+         public void deposite() {
+            System.out.println(" you called SBI bank deposite"); 
+        }
+    }
+
+
+    Bank cb = new CitiBank(); 
+    cb.deposite(); 
+    ((CitiBank)cb).internationalTransfer();
+
+    cb = new SBI(); 
+    cb.deposite(); 
+
+```
+2. overloading 
+    - same class, same method name, diff signatures 
+
 ## Unit Testing
 ## Design Patterns
 
