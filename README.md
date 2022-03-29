@@ -209,6 +209,8 @@
 2. overloading 
     - same class, same method name, diff signatures 
 
+Statement -> (PreparedStatement + Batch ) -> (CallableStatement + function)
+
 ## Unit Testing
 ## Design Patterns
 
