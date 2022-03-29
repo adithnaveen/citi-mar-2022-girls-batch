@@ -211,7 +211,76 @@
 
 Statement -> (PreparedStatement + Batch ) -> (CallableStatement + function)
 
+
+
+
+```
+
+    interface IBankDAO {
+        public insert(Bank bank;)
+    }
+
+    com.citi.india
+    class BankDAO  implement IBankDao{
+        @Override
+        public insert(Bank bank) {
+                // mysql  - india
+        }
+    }
+
+    com.citi.germany
+    class BankDAO implements IBankDAO{
+        @Override
+        public insert(Bank bank) {
+            // oracle - germany
+        }
+    }
+
+
+    class IncomeTax {
+        public void showTax(IBankDAO dao) {
+            if(dao instanceof com.citi.india.BankDOA) {
+                then return indian tax 
+            } else if(dao instanceof com.citi.germanay.BankDAo) {
+                return germany tax 
+            }
+        }
+
+    }
+
+
+    IBankDAO bankDao  =new BankDao(); 
+    bankDao.insert(bank); 
+
+     bankDAO = new BankDAO();
+    bankDao.insertBank(bank); 
+
+
+```
+
 ## Unit Testing
+    - JUNIT 
+        - 4 
+        - 5 (jupiter) 
+    - TESTNG
+
+    - MDD - Model Driven Development 
+    - DDD - Domain Driven Development 
+    - BDD - Behviour Driven Developer 
+        - Given, When, Then, But, And 
+```
+    Given the application is loaded 
+    When user enters valid username 
+    And valid password 
+    Then the user is taken to home page 
+```
+
+    - TDD - Test Driven Development 
+        - any thing you write should be tested 
+
+- SDET 
+
+
 ## Design Patterns
 
 
