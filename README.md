@@ -107,16 +107,53 @@
 
 
 ## Database Concepts
-    - DDL
-    - DML
-    - DQL 
-    - TCL 
-    - DCL 
+    - DDL - Create, Truncate, Drop
+    - DML - Insert, Update, Delete, Merge
+    - DQL - Select
+    - TCL - Savepoint, commit, rollback
+    - DCL - Grant, Revoke 
 
 
 - ORACLE, MYSQL, DB2, SQL SERVER ... - DBMS 
 - MongoDB, Redis, cauchDB, dynamo, cockroach... - DB 
-- MS - A- atomicity,  C- consitency, I - isolated, D 
+- MS - A- atomicity,  C- consitency, I - isolated, D - durability 
+    + additional responsibility 
+    + slower 
+    + because it is managed at secondary storage level 
+    + Processor
+    + cache 
+    + RAM 
+    + HDD 
+
+### Bank 
+    - bankId (primary key [not null + unique + index])
+    - bankName
+    - location
+### Branch 
+    - branchId (primary key [not null + unique + index])
+    - branchName
+    - branchManager 
+    ... 
+    - bankId (fk)
+
+
+
+```
+    create table bank(
+        bankid int primary key, 
+        bankname varchar(20), 
+        location varchar(50)
+    ); 
+
+    create table branch(
+        branchid int primary key, 
+        branchname varchar(40), 
+        branchmanager varchar(30), 
+        bankid int, 
+        foreign key(bankid) references bank(bankid)
+    ); 
+```
+
 
 ## JDBC
 ## Unit Testing
