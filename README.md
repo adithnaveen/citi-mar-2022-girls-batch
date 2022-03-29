@@ -107,6 +107,17 @@
 
 
 ## Database Concepts
+    - DDL
+    - DML
+    - DQL 
+    - TCL 
+    - DCL 
+
+
+- ORACLE, MYSQL, DB2, SQL SERVER ... - DBMS 
+- MongoDB, Redis, cauchDB, dynamo, cockroach... - DB 
+- MS - A- atomicity,  C- consitency, I - isolated, D 
+
 ## JDBC
 ## Unit Testing
 ## Design Patterns
