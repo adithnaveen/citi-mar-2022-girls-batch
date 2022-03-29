@@ -280,11 +280,94 @@ Statement -> (PreparedStatement + Batch ) -> (CallableStatement + function)
 
 - SDET 
 
+```
+    List<String> 
+```
+
+
 
 ## Design Patterns
 
+- S - Single Responsibility Principle 
+```
+    public void inertEmployee() {
+        // you should write a code only to insert 
+        // and dont do any other work like fetching etcc.. 
+    }
+```
+- O -open close principle 
+```
+    class Vehicle {
+        moving 
+        abs 
+    }
+    class Car exends Vehicle {
+        number of wheeels 
+    }
+    class Truck extends Vehicle {
+        load of vehicle 
+    }
+```
+- L - Liskov Substitution Principle 
+- I - Interface segregation principle 
+- D - Dependency Injection 
+    - try to avoid new 
 
 
+- GOF - Gang of Four 
+    - Erric gamma 
+    - kent beck 
+
+- creational 
+    - Singleton
+
+```
+    class Employee  {
+        int empId; 
+        String empName; 
+        Company company; 
+        Employee(empId, empName, Companay company)  {
+            this.empId = empId; 
+            this.empName = empName; 
+            this.company = company;
+        }
+
+    }
+
+    Employee emp = new Employee(101, "Janhvi", new Company()); 
+    Employee emp2 = new Employee(102, "Kareena", new Company()); 
+    .... 
+
+```
+
+
+    - Factory 
+    ```
+
+    Bank <- some params based on it it will created 
+        SB Account
+        CA Account
+        RD Account 
+        FD Account 
+        Demat Account 
+        ... 
+        500 classess 
+
+        ---------------
+        SBAccount sb = new SBAccount(); 
+        CAAccount ca = new CAAccount(); 
+        .... 
+
+
+    ```
+
+    - Abstract Factory 
+- structural 
+    - adapter pattern 
+    - facade 
+    - 
+- behavioural
+    - observer pattern 
 ### conventions 
 
 1. variables - camelCase - empId, empSalary, amountOfBalance
