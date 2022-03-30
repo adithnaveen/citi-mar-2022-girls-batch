@@ -378,3 +378,75 @@ Statement -> (PreparedStatement + Batch ) -> (CallableStatement + function)
 
 
 
+<br >
+
+# Day2 
+
+
+
+```
+    int main() {
+
+    }
+
+by default c executor will return 0 
+    void main() {
+
+    }
+```
+
+
+- Basics of Web
+    - 1999 - W3C 
+    - XML - the way you pass the data / descriptive data 
+    - XSLT
+    - XSL
+    - XSD 
+    - XPATH 
+    - HTTP 
+        - 1.0 - stateful 
+        - 1.1 - Stateless - pull's 
+        - 2.0 - RPC - gRPC - Push
+    - Web Servers
+        - tomcat 
+        - Apache 
+        - IIS 
+        - Glassfish
+        - Jetty 
+        - Netty 
+        - web logic 
+        - web sphere... 
+        - django 
+        - GIN /GORM 
+    - Json
+    ```
+        {
+            empId:101, 
+            empName:{
+                first:"Meghana", 
+                last:"Mohanthy"
+            }, 
+            address: {
+                hno:123, 
+                street:"Good Dream Blvd", 
+                city:"Mumbai", 
+                state:"Maharastra"
+            }
+        }
+    ```
+    - Server Codes - https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+        - 1XX - is client has sent the request or more towards client 
+            - 100 
+        - 2XX - the server has acknowledged 
+            - 200 - OK 
+            - 201 - Created
+        - 3XX - redirection 
+            - 307 - redirection 
+        - 4XX - client made a wrong requiest with URL / URI 
+            - 403 - forbidden access 
+            - 404 - page not found 
+        - 5XX - the request was given to server but server responded with error 
+            - 500 - internal server error 
+- Spring
+- Spring Boot
+- Javascript, ES6, Typescript, Introdution Angular

@@ -4,11 +4,10 @@ public class TeamLeader  extends Employee{
 	private String approve;
 
 	public TeamLeader(
-			int empId, String firstName, 
-			String lastName, double salary, 
+			int empId, Name name, double salary, 
 			String approve
 			) {
-		super(empId, firstName, lastName, salary); 
+		super(empId, name, salary); 
 		this.approve = approve;
 	}
 	

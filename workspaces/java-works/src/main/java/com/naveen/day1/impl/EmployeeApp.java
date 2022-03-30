@@ -8,14 +8,14 @@ public class EmployeeApp {
 	public static void main(String[] args) {
 		Employee gargi = EmployeeBL.setEmployeeData(101, "Gargi", "Joshi", 1234);
 
-		EmployeeBL.display(gargi);
+//		EmployeeBL.display(gargi);
 
 		Employee teja = EmployeeBL.setEmployeeData(102, "Tejashree", "Patil", 2233);
-		EmployeeBL.display(teja);
+//		EmployeeBL.display(teja);
 		
 		
-		TeamLeader tlMansi = new TeamLeader(110, "Mansi", "Indore", 3344, "attendance"); 
-		EmployeeBL.display(tlMansi);
+//		TeamLeader tlMansi = new TeamLeader(110, "Mansi", "Indore", 3344, "attendance"); 
+//		EmployeeBL.display(tlMansi);
 
 		
 	}
