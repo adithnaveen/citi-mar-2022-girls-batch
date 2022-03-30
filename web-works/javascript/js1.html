@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        console.log("this is in head section of java script ")
+
+        function fnCheckToVotes() {
+            var name = prompt("Enter your Name");
+            var age = parseInt(prompt("Enter your age"));
+
+
+
+            mystr = name;
+
+            if (age > 18) {
+                mystr = mystr + " You can Vote";
+            } else {
+                mystr = mystr + " Sorry you cannot vote";
+            }
+            document.getElementById("mydiv").innerHTML = mystr;
+
+        }
+        function fnGetServerData() {
+            // this function should get the data from ther spring boot 
+            fetch('http://localhost:9090/users')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("mydiv").innerHTML = data
+                    console.log(data);
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        console.log("this is in body section of java script ")        
+    </script>
+
+    <button onclick="fnCheckToVotes()">Click Me</button>
+    <button onclick="fnGetServerData()">Get ServerData</button>
+    <div id="mydiv"></div>
+
+</body>
+
+</html>

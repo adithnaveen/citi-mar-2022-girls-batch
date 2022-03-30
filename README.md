@@ -477,5 +477,15 @@ by default c executor will return 0
 ```
 
 - Spring Boot
+- https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.5&packaging=jar&jvmVersion=11&groupId=com.naveen&artifactId=user-service&name=user-service&description=Demo%20project%20for%20Spring%20Boot&packageName=com.naveen.user.service&dependencies=web,devtools,mysql,data-jpa
+
+- insert - POST
+- read - GET 
+- update - PUT 
+- delete - DELETE 
+
 
 - Javascript, ES6, Typescript, Introdution Angular
+- RIA - Rich Internet Application 
+- SPA - Single Page Application 
+- Javascript- can be controlled by end user 
