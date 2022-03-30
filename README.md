@@ -447,6 +447,35 @@ by default c executor will return 0
             - 404 - page not found 
         - 5XX - the request was given to server but server responded with error 
             - 500 - internal server error 
+
 - Spring
+```
+    Employee e = new Employee(); 
+    - because java does not support holding the ref of the object 
+
+    int *p = (*int) malloc(100); 
+    .. 
+    free(p); 
+
+    in c++ 
+    class Emp {
+        Emp(){}
+        ~Emp(){}
+    }
+```
+- 2003 - Rod Johnson 
+
+```
+-- hey spring get me JDBC - it means you have to pass the class, which is tightly coupled 
+
+
+    interface DBContracts {}
+
+    class JDBCImplementation implements DBContracts{}
+    class MongoDBImpl implenets DBContracts{}
+    class DummyImpl implements DBContracts{}
+```
+
 - Spring Boot
+
 - Javascript, ES6, Typescript, Introdution Angular
