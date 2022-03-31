@@ -1,0 +1,47 @@
+
+<h3>Contact Details </h3>
+<hr />
+
+<img src="{{contact.picture}}" alt="" height="150px">
+Picture Link : {{contact.picture}}
+<div class="row">
+
+  <div class="col">First Name </div>
+  <div class="col">
+    {{contact | fullname }} 
+  
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">Gender</div>
+  <div class="col">{{contact.gender}}</div>
+</div>
+<div class="row">
+  <div class="col">Email </div>
+  <div class="col">{{contact.email}}</div>
+</div>
+<div class="row">
+  <div class="col">Phone</div>
+  <div class="col">{{contact.phone}}</div>
+</div>
+<div class="row">
+  <div class="col">DOB</div>
+  <div class="col">{{contact.dob}}
+    <br > 
+    ({{contact.dob | age:3}})
+  </div>
+</div>
+<div class="row">
+  <div class="col">City</div>
+  <div class="col">{{contact.city | uppercase}}</div>
+</div>
+<div class="row">
+  <div class="col">State</div>
+  <div class="col">{{contact.state}}</div>
+</div>
+<div class="row">
+  <div class="col">Country</div>
+  <div class="col">{{contact.country}}</div>
+</div>
+<button class="btn btn-danger" (click)="deleteContact()">Delete {{contact.firstname}}</button>

@@ -1,0 +1,30 @@
+{
+    "contacts": [
+        {
+            "gender": "Male",
+            "picture": "/assets/images/jobs.jpg",
+            "id": 101,
+            "firstname": "Naveen",
+            "lastname": "Kumar",
+            "email": "naveen@probits.in",
+            "phone": "9900524255",
+            "dob": "1990-10-20",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India"
+        },
+        {
+            "gender": "Female",
+            "picture": "/assets/images/profile.png",
+            "id": 102,
+            "firstname": "Jane",
+            "lastname": "Kane",
+            "email": "Jane@probits.in",
+            "phone": "23232323",
+            "dob": "1980-10-20",
+            "city": "Reston",
+            "state": "Virginia",
+            "country": "USA"
+        }
+    ]
+}
