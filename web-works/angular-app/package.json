@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "json-server": "json-server --port 4300 --watch ./src/db/data_old.json"
+    "json-server": "json-server --port 4300 --watch ./src/db/data.json"
   },
   "private": true,
   "dependencies": {

@@ -550,6 +550,30 @@ by default c executor will return 0
     - branch service 
         - @GetMapping("/branch/{branchName}") -> http://localhost:8200/branch/somebranch
 
+- where the pom.xml 
+    - mvn spring-boot:run
+        - start in order 
+            1. eureka 
+            2. bank 
+            3. branch 
+
+
+- angujarjs 1.0  
+- angular 2.0 
+- Angular 
+    - typescript 
+    - jasmine 
+    - component 
+        - .html - template 
+        ```
+            Welcome {{name}} <- here 
+        ```
+        - .css 
+        - .ts - business logic - this will do the work and store it in a variable that variable -> 
+        - .spec - test case 
+- React 
+    - es6 or typescript 
+    - jasmine, mocha, chai, jest, testing library etc etc. 
 - DevOps
 
 - Q&A 
