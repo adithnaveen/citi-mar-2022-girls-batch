@@ -383,7 +383,6 @@ Statement -> (PreparedStatement + Batch ) -> (CallableStatement + function)
 # Day2 
 
 
-
 ```
     int main() {
 
@@ -399,8 +398,8 @@ by default c executor will return 0
 - Basics of Web
     - 1999 - W3C 
     - XML - the way you pass the data / descriptive data 
-    - XSLT
-    - XSL
+    - XSLT - is the way the data is presented + filtering  
+    - XSL - is the way the data is presented 
     - XSD 
     - XPATH 
     - HTTP 
@@ -489,3 +488,68 @@ by default c executor will return 0
 - RIA - Rich Internet Application 
 - SPA - Single Page Application 
 - Javascript- can be controlled by end user 
+
+
+
+# Day 3 
+
+
+- difference between compiler and scripting language 
+
+
+```
+     function fnCheckToVotes() {
+            var name = prompt("Enter your Name");
+            var age = parseInt(prompt("Enter your age"));
+
+
+
+            mystr = name;
+
+            if (age > 18) {
+                mystr = mystr + " You can Vote";
+            } else {
+                mystr = mystr + " Sorry you cannot vote";
+            }
+            document.getElementById("mydiv").innerHTML = mystr;
+
+        }
+```
+
+- NodeJS commands, Typescript & ES6
+    - European Computer Manufacturers Association
+- MVC vs MVP vs MVVM
+- SDLC
+    - planning 
+    - Req Gathering 
+    - proper documenation of the project 
+    - designing 
+    - testing 
+    - deployment 
+    - intergrating change 
+    - maintenance 
+    - analysis 
+    - taking feedbacks - client feedback / stake holders 
+- Water Fall Model -> RA -> DESING -> IMPL -> TEST -> MAINTAIN
+
+    - STLC 
+    - Agile -> CITI, HSBC, FACEBOOK, HCL - zillions 
+        - fast 
+        - sprint 
+        - standup 
+        - IST - Indinan Streachable time - Kanban 
+    - SAFe
+    - VModel 
+
+- Microservice and Monolithic applications 
+
+- Microservices
+    - bank service 
+        - @GetMapping("/bank") -> http://localhost:8100/bank 
+        - @GetMapping("/bank/branch/{branchName}") -> http://localhost:8100/bank/branch/somebranch
+    - branch service 
+        - @GetMapping("/branch/{branchName}") -> http://localhost:8200/branch/somebranch
+
+- DevOps
+
+- Q&A 
